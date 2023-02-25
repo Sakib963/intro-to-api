@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-5xl text-white text-center mt-10">Find Any Country</h1>
+    <!-- Filter Section -->
+    <section class="w-3/4 bg-gray-500 mx-auto mt-10 rounded-lg p-5">
+        <div class="flex gap-6 items-center justify-between">
+            <h1 class="text-3xl text-white">Apply Filters: </h1>
+            <select class="select select-secondary w-full max-w-xs text-lg" id="selected-value" onchange="getValue()">
+                <option disabled selected>Region</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+              </select>
+              <!-- Capital City -->
+              <div class="flex gap-3">
+                <input type="text" placeholder="Type Any Capital City" class="input input-bordered input-accent w-full max-w-xs" id="capital-input-field"/>
+                <button class="btn btn-outline btn-info" id="capital-button">Search</button>
+              </div>
+              <div class="flex gap-3">
+                <input type="text" placeholder="Type Any Language" class="input input-bordered input-accent w-full max-w-xs" id="language-input-field"/>
+                <button class="btn btn-outline btn-info" id="language-button">Search</button>
+              </div>
+              
+        </div>
+    </section>
+    <!-- Country Details Section -->
+    <section class="mt-10 bg-red-400 w-3/4 mx-auto rounded-lg p-4">
+        <div class="grid grid-cols-3 gap-4" id="country-container">
+            <!-- <div class="card card-compact bg-base-100 shadow-xl">
+                <figure><img src=""/></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Country Name: </h2>
+                  <h2 class="text-lg">Capital City: </h2>
+                  <h2 class="text-lg">Region: </h2>
+                  <p>Languages: </p>
+                  <p>Population: </p>
+                </div>
+              </div> -->
+        </div>
+    </section>
+
+    <script src="country.js"></script>
+</body>
+</html>

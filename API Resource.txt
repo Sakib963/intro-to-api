@@ -1,0 +1,5 @@
+Kanye West: https://kanye.rest/
+Random User: https://randomuser.me/
+Rest Countries: https://restcountries.com/#api-endpoints-v2-all
+Mealdb: https://www.themealdb.com/api.php
+Public API's: https://github.com/public-apis/public-apis
